@@ -7,6 +7,7 @@
 
     <ImageView
         android:id="@+id/ivImageDetail"
+        android:transitionName="small_image"
         android:layout_width="@dimen/detail_image_size"
         android:layout_height="@dimen/detail_image_size"
         android:layout_margin="@dimen/detail_image_margin"
@@ -16,6 +17,7 @@
 
     <TextView
         android:id="@+id/tvTitle"
+        android:transitionName="small_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/detail_title_margin"
@@ -30,6 +32,7 @@
 
     <TextView
         android:id="@+id/tvSubtitle"
+        android:transitionName="small_subtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/detail_subtitle_margin_top"

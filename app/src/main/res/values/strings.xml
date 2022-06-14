@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AnimationsDemoWizelineAcademy</string>
+    <string name="transition">sharedTransition</string>
 </resources>

@@ -1,7 +1,9 @@
 package com.wizeline.academy.animations.ui.more_details
 
 import android.os.Bundle
+import android.transition.TransitionInflater
 import android.view.LayoutInflater
+import android.view.SurfaceControl
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
@@ -26,7 +28,17 @@ class MoreDetailsFragment : Fragment() {
     ): View {
         _binding = MoreDetailsFragmentBinding.inflate(inflater, container, false)
         binding.ivImageDetailLarge.loadImage(args.imageId)
+
         return binding.root
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val animation = TransitionInflater.from(requireContext()).inflateTransition(
+            android.R.transition.move
+        )
+        sharedElementEnterTransition = animation
+        sharedElementReturnTransition =  animation
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

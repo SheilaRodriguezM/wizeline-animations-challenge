@@ -45,6 +45,7 @@ ext {
     moshi_version = '2.9.0'
     glide_version = '4.13.0'
     lottieVersion = '5.0.3'
+    nav_version = "2.4.2"
 }
 
 dependencies {
@@ -71,6 +72,10 @@ dependencies {
 
     // Lottie
     implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    // Kotlin
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
 
     def dynamicanimation_version = '1.0.0'
     implementation "androidx.dynamicanimation:dynamicanimation:$dynamicanimation_version"
